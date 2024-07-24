@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_components_tech_infos",
+  "info": {
+    "displayName": "TechInfo"
+  },
+  "options": {},
+  "attributes": {
+    "dimensions": {
+      "type": "string",
+      "default": "32 × 23 × 8"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "distributionPackageDimensions": {
+      "type": "string",
+      "default": "35 × 25 × 50"
+    },
+    "packaging": {
+      "type": "integer",
+      "default": 6
+    },
+    "distributionPackWeight": {
+      "type": "decimal",
+      "default": 12
+    },
+    "ENGeditionEAN": {
+      "type": "integer"
+    },
+    "CZeditionEAN": {
+      "type": "integer"
+    },
+    "DEeditionEAN": {
+      "type": "integer"
+    }
+  }
+}

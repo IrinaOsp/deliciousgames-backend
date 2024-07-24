@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "Game",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "specification": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.tech-data"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.images",
+      "required": true
+    },
+    "videos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.video"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.price"
+    },
+    "rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.rule"
+    },
+    "techInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.tech-info"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_prices",
+  "info": {
+    "displayName": "price"
+  },
+  "options": {},
+  "attributes": {
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "EUR",
+        "CZK"
+      ],
+      "default": "CZK",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    }
+  }
+}
