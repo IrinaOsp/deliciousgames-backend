@@ -382,6 +382,7 @@ export interface ApiGameGame extends Schema.CollectionType {
     price: Attribute.Component<'components.price', true>;
     rules: Attribute.Component<'components.rule', true>;
     techInfo: Attribute.Component<'components.tech-info'>;
+    path: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
