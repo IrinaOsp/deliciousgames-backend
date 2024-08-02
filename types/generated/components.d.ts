@@ -89,6 +89,20 @@ export interface ComponentsPrice extends Schema.Component {
   };
 }
 
+export interface ComponentsMainPageSlider extends Schema.Component {
+  collectionName: 'components_components_main_page_sliders';
+  info: {
+    displayName: 'MainPageSlider';
+    description: '';
+  };
+  attributes: {
+    topTitle: Attribute.String;
+    buttonText: Attribute.String;
+    banner: Attribute.Media<'images'> & Attribute.Required;
+    bg: Attribute.Media<'images'> & Attribute.Required;
+  };
+}
+
 export interface ComponentsImages extends Schema.Component {
   collectionName: 'components_components_images';
   info: {
@@ -112,6 +126,7 @@ declare module '@strapi/types' {
       'components.tech-data': ComponentsTechData;
       'components.rule': ComponentsRule;
       'components.price': ComponentsPrice;
+      'components.main-page-slider': ComponentsMainPageSlider;
       'components.images': ComponentsImages;
     }
   }

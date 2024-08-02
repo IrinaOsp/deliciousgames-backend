@@ -54,6 +54,12 @@
     },
     "path": {
       "type": "string"
+    },
+    "mainPageSlider": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.main-page-slider",
+      "required": true
     }
   }
 }

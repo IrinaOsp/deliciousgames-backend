@@ -383,6 +383,8 @@ export interface ApiGameGame extends Schema.CollectionType {
     rules: Attribute.Component<'components.rule', true>;
     techInfo: Attribute.Component<'components.tech-info'>;
     path: Attribute.String;
+    mainPageSlider: Attribute.Component<'components.main-page-slider'> &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
