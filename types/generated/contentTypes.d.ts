@@ -373,18 +373,77 @@ export interface ApiGameGame extends Schema.CollectionType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    title: Attribute.String & Attribute.Required & Attribute.Unique;
-    description: Attribute.Text & Attribute.Required;
-    specification: Attribute.Component<'components.tech-data'>;
-    images: Attribute.Component<'components.images'> & Attribute.Required;
-    videos: Attribute.Component<'components.video', true>;
-    price: Attribute.Component<'components.price', true>;
-    rules: Attribute.Component<'components.rule', true>;
-    techInfo: Attribute.Component<'components.tech-info'>;
-    path: Attribute.String;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    description: Attribute.Text &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    specification: Attribute.Component<'components.tech-data'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    images: Attribute.Component<'components.images'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    videos: Attribute.Component<'components.video', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    price: Attribute.Component<'components.price', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    rules: Attribute.Component<'components.rule', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    techInfo: Attribute.Component<'components.tech-info'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    path: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     mainPageSlider: Attribute.Component<'components.main-page-slider'> &
-      Attribute.Required;
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -392,6 +451,12 @@ export interface ApiGameGame extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::game.game', 'oneToOne', 'admin::user'> &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::game.game',
+      'oneToMany',
+      'api::game.game'
+    >;
+    locale: Attribute.String;
   };
 }
 

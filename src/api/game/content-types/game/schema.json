@@ -10,56 +10,110 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "specification": {
       "type": "component",
       "repeatable": false,
-      "component": "components.tech-data"
+      "component": "components.tech-data",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "images": {
       "type": "component",
       "repeatable": false,
       "component": "components.images",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "videos": {
       "type": "component",
       "repeatable": true,
-      "component": "components.video"
+      "component": "components.video",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "price": {
       "type": "component",
       "repeatable": true,
-      "component": "components.price"
+      "component": "components.price",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "rules": {
       "type": "component",
       "repeatable": true,
-      "component": "components.rule"
+      "component": "components.rule",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "techInfo": {
       "type": "component",
       "repeatable": false,
-      "component": "components.tech-info"
+      "component": "components.tech-info",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "path": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "mainPageSlider": {
       "type": "component",
       "repeatable": false,
       "component": "components.main-page-slider",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
