@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_game_components",
+  "info": {
+    "displayName": "GameComponents",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "components": {
+      "type": "blocks"
+    }
+  }
+}

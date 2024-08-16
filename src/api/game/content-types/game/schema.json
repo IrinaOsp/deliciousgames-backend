@@ -114,6 +114,16 @@
           "localized": true
         }
       }
+    },
+    "gameComponents": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "components.game-components"
     }
   }
 }

@@ -118,6 +118,17 @@ export interface ComponentsImages extends Schema.Component {
   };
 }
 
+export interface ComponentsGameComponents extends Schema.Component {
+  collectionName: 'components_components_game_components';
+  info: {
+    displayName: 'GameComponents';
+    description: '';
+  };
+  attributes: {
+    components: Attribute.Blocks;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -128,6 +139,7 @@ declare module '@strapi/types' {
       'components.price': ComponentsPrice;
       'components.main-page-slider': ComponentsMainPageSlider;
       'components.images': ComponentsImages;
+      'components.game-components': ComponentsGameComponents;
     }
   }
 }
