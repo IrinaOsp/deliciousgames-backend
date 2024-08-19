@@ -124,6 +124,25 @@
         }
       },
       "component": "components.game-components"
+    },
+    "sortingID": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "unique": false
+    },
+    "gameTag": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
